@@ -1,6 +1,6 @@
-lazy val root = (project in file(".")).
-  settings(
-    name := "hello",
-    version := "1.0",
-    scalaVersion := "2.11.8"
-  )
+name := "Sarmail"
+version := "1.0"
+scalaVersion := "2.11.8"
+libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.5-SNAPSHOT"
+
+resolvers += "Akka Snapshot Repository" at "http://repo.akka.io/snapshots/"
